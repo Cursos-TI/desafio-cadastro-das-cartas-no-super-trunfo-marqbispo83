@@ -29,10 +29,10 @@ int main() {
     int pontosturisticos2;
     
     // Cadastro das Cartas:
-    printf("Cadastro da primeira carta \n");
+    printf("Cadastro da primeira carta \n"); 
     
     //solicitando dados da primeira carta para o usúario.
-    printf("Digite a letra da primeira carta(A-H): ");
+    printf("Digite a letra da primeira carta(A-H): ");  
     scanf(" %c", &estado1);
 
     printf("Digite o código da carta (ex:A01): ");
@@ -53,13 +53,52 @@ int main() {
     printf("Digite número de pontos turísticos: ");
     scanf("%d", &pontosturisticos1);
 
+    printf("\nCadastro da segunda carta\n");
+
+    printf("Digite a letra da primeira carta(A-H): ");
+    scanf(" %c", &estado2);
+
+    printf("Digite o código da carta (ex:A01): ");
+    scanf("%s", codigo2);
+
+    printf("Digite o nome da cidade: ");
+    scanf("%s", cidade2);
+
+    printf("Digite o tamanho da população: ");
+    scanf("%d", &populacao2);
+
+    printf("Digite a área em (KM²): ");
+    scanf("%f", &area2);
+
+    printf("Digite o Pib: ");
+    scanf("%f", &pib2);
+
+    printf("Digite número de pontos turísticos: ");
+    scanf("%d", &pontosturisticos2);
+
+    
+    // Exibindo dados da primeira carta
+    printf("\nDados da Primeira Carta\n");
+   
+    printf("Estado: %c\n", estado1);
+    printf("Codigo: %s\n", codigo1);
+    printf("Cidade: %s\n", cidade1);
+    printf("Populacao: %d\n", populacao1);
+    printf("Area: %.2f km²\n", area1);
+    printf("PIB: %.2f\n", pib1);
+    printf("Pontos Turisticos: %d\n", pontosturisticos1);
+
+    // Exibindo dados da segunda carta
+    printf("\nDados da Segunda Carta\n");
+    printf("Estado: %c\n", estado2);
+    printf("Codigo: %s\n", codigo2);
+    printf("Cidade: %s\n", cidade2);
+    printf("Populacao: %d\n", populacao2);
+    printf("Area: %.2f km²\n", area2);
+    printf("PIB: %.2f\n", pib2);
+    printf("Pontos Turisticos: %d\n", pontosturisticos2);
 
 
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     return 0;
 }
